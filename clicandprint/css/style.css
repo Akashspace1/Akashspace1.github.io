@@ -229,3 +229,50 @@ h2{ font-size: var(--text-24); }
 .footer ul li{ padding: 0 8px; }
 .footer ul li a{font-size: 13px;}
 }
+.mainpara {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+
+.mainpara p span:after {
+    content: "";
+    position: absolute;
+    right: calc(100% + 10px);
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 5px;
+    height: 5px;
+    background: #000;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.mainpara p span {
+    position: relative;
+    margin-left: 15px;
+    / display: inline-block; /
+    width: auto;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    
+    .mainpara {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .mainpara p span:after {
+        
+        right: calc(100% + 20px);
+        
+    }
+    .mainpara {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
